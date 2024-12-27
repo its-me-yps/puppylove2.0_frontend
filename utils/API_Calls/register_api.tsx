@@ -6,13 +6,16 @@ export const handleRegister = async (id: string, recaptchaToken: string) => {
     myHeaders.append("g-recaptcha-response", recaptchaToken);
 
     const requestOptions: RequestInit = {
-      method: 'POST',
+      method: "POST",
       headers: myHeaders,
       body: "",
-      redirect: 'follow'
+      redirect: "follow",
     };
 
-    const response = await fetch(SERVER_IP + "/captcha/user/mail/" + id, requestOptions);
+    const response = await fetch(
+      SERVER_IP + "/captcha/user/mail/" + id,
+      requestOptions,
+    );
 
     if (!response.ok && response.status === 403) {
       console.log(`HTTP Error: ${response.status} - ${response.statusText}`);

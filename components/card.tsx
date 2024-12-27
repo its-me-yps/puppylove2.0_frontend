@@ -1,7 +1,13 @@
 import React, { useState } from "react";
 import "../styles/card.css";
 
-const Card = ({ student, onClick, clickedCheck, isActive, hearts_submitted }: any) => {
+const Card = ({
+  student,
+  onClick,
+  clickedCheck,
+  isActive,
+  hearts_submitted,
+}: any) => {
   const userName = student.u;
   const roll = student.i;
 
@@ -15,21 +21,19 @@ const Card = ({ student, onClick, clickedCheck, isActive, hearts_submitted }: an
     if (!isClicked) {
       onClick(student.i);
     } else {
-      alert('This student has already been clicked!');
+      alert("This student has already been clicked!");
     }
   };
 
   return (
-    <div className={`card ${isActive(student.i) ? '' : 'inactive'}`}>
+    <div className={`card ${isActive(student.i) ? "" : "inactive"}`}>
       <div className="image-box">
         <div className="profile" style={stylesss}></div>
       </div>
       <p className="card-details">{student.n}</p>
       <p className="card-details">{student.i}</p>
       {hearts_submitted && isActive(student.i) ? (
-        <div className="carddetails">
-          Hearts Submitted
-        </div>
+        <div className="carddetails">Hearts Submitted</div>
       ) : isActive(student.i) ? (
         <div className="carddetails">
           <button className="button" onClick={clicked} disabled={clickedCheck}>

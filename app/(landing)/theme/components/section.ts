@@ -7,15 +7,15 @@ const Section = {
   variants: {
     subtle: {},
     solid: {
-      bg: 'primary.400',
+      bg: "primary.400",
     },
     alternate: ({ colorMode }: any) => ({
-      bg: colorMode === 'dark' ? 'gray.800' : 'gray.50',
+      bg: colorMode === "dark" ? "gray.800" : "gray.50",
     }),
   },
   defaultProps: {
-    variant: 'subtle',
+    variant: "subtle",
   },
-}
+};
 
-export default Section
+export default Section;

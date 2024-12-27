@@ -16,7 +16,7 @@ const Card = ({ student, onClick, hearts_submitted }: any) => {
       onClick(student.i);
       setIsClicked(true);
     } else {
-      alert('This student has already been selected');
+      alert("This student has already been selected");
     }
   };
 
@@ -34,9 +34,7 @@ const Card = ({ student, onClick, hearts_submitted }: any) => {
           </button>
         </div>
       ) : (
-        <div className="carddetails">
-          Hearts Submitted
-        </div>
+        <div className="carddetails">Hearts Submitted</div>
       )}
     </div>
   );

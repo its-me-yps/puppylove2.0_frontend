@@ -1,93 +1,92 @@
-import { Button } from '@chakra-ui/react'
-import { Link } from '@saas-ui/react'
-import { NextSeoProps } from 'next-seo'
-import { FaGithub, FaInstagram, FaLinkedin } from 'react-icons/fa'
-import { FiCheck } from 'react-icons/fi'
-import Image from 'next/image'
-import { Logo } from './logo'
+import { Button } from "@chakra-ui/react";
+import { Link } from "@saas-ui/react";
+import { NextSeoProps } from "next-seo";
+import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
+import { FiCheck } from "react-icons/fi";
+import Image from "next/image";
+import { Logo } from "./logo";
 
 const siteConfig = {
   logo: Logo,
   seo: {
-    title: 'Puppy Love',
+    title: "Puppy Love",
     description: "IIT Kanpur's Dating App",
   } as NextSeoProps,
-  termsUrl: '#',
-  privacyUrl: '#',
+  termsUrl: "#",
+  privacyUrl: "#",
   header: {
     links: [
       {
-        id: '',
-        label: 'Home',
+        id: "",
+        label: "Home",
       },
       {
-        id: 'credits',
-        label: 'Credits',
+        id: "credits",
+        label: "Credits",
       },
       {
-        id: 'stats',
-        label: 'Statistics',
+        id: "stats",
+        label: "Statistics",
       },
     ],
   },
   footer: {
     copyright: (
       <>
-        Built by{' '}
-        <Link href="https://pclub.in/">Programming Club</Link>
+        Built by <Link href="https://pclub.in/">Programming Club</Link>
       </>
     ),
     links: [
       {
-        href: 'https://pclub.in/',
-        label: 'Website',
+        href: "https://pclub.in/",
+        label: "Website",
       },
       {
-        href: 'mailto:pclubiitk@gmail.com',
-        label: 'Contact',
+        href: "mailto:pclubiitk@gmail.com",
+        label: "Contact",
       },
       {
-        href: 'https://www.linkedin.com/company/pclubiitk/',
+        href: "https://www.linkedin.com/company/pclubiitk/",
         label: <FaLinkedin size="14" />,
       },
       {
-        href: 'https://www.instagram.com/pclubiitk/',
+        href: "https://www.instagram.com/pclubiitk/",
         label: <FaInstagram size="14" />,
       },
       {
-        href: 'https://github.com/pclubiitk',
+        href: "https://github.com/pclubiitk",
         label: <FaGithub size="14" />,
       },
     ],
   },
   signup: {
-    title: 'Start dating',
+    title: "Start dating",
     features: [
       {
         icon: FiCheck,
-        title: 'Accessible',
-        description: 'All components strictly follow WAI-ARIA standards.',
+        title: "Accessible",
+        description: "All components strictly follow WAI-ARIA standards.",
       },
       {
         icon: FiCheck,
-        title: 'Themable',
+        title: "Themable",
         description:
-          'Fully customize all components to your brand with theme support and style props.',
+          "Fully customize all components to your brand with theme support and style props.",
       },
       {
         icon: FiCheck,
-        title: 'Composable',
+        title: "Composable",
         description:
-          'Compose components to fit your needs and mix them together to create new ones.',
+          "Compose components to fit your needs and mix them together to create new ones.",
       },
       {
         icon: FiCheck,
-        title: 'Productive',
+        title: "Productive",
         description:
-          'Designed to reduce boilerplate and fully typed, build your product at speed.',
+          "Designed to reduce boilerplate and fully typed, build your product at speed.",
       },
     ],
   },
-}
+};
 
-export default siteConfig
+export default siteConfig;

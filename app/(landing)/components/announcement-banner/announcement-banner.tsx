@@ -1,12 +1,5 @@
 import NextLink from "next/link";
-import {
-  Box,
-  Container,
-  Flex,
-  HStack,
-  Icon,
-  Button,
-} from "@chakra-ui/react";
+import { Box, Container, Flex, HStack, Icon, Button } from "@chakra-ui/react";
 import {
   Banner,
   BannerActions,
@@ -24,7 +17,7 @@ export interface AnnouncementBannerProps {
 }
 
 export const AnnouncementBanner: React.FC<AnnouncementBannerProps> = (
-  props
+  props,
 ) => {
   const { title, description, href, action } = props;
   if (!title) {

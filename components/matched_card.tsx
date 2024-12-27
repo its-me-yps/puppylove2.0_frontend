@@ -9,9 +9,8 @@ const MatchedCard = ({ student }: any) => {
     backgroundImage: `url("https://home.iitk.ac.in/~${userName}/dp"), url("https://oa.cc.iitk.ac.in/Oa/Jsp/Photo/${roll}_0.jpg"), url("/dummy.png")`,
   };
 
-
   return (
-    <div className= "cardr">
+    <div className="cardr">
       <div className="image-boxr">
         <div className="profiler" style={stylesss}></div>
       </div>
